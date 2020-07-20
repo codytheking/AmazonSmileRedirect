@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "AmazonSmileRedirect",
+  "version": "1.0",
+
+  "description": "Redirects page from amazon.com to smile.amazon.com.",
+
+  "icons": {
+    "48": "icons/arrow-icon-svg.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.amazon.com/*"],
+      "js": ["redirect.js"]
+    }
+  ]
+
+}
